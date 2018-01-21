@@ -6,9 +6,9 @@ OpenCL Logistic Regression with gradient ascent
 ---
 
 ### build
-makefile includede targeting Intel AMD and nVidia platforms. Linux Only.
+makefile included. Targets are intel, amd and nvidia. Linux Only.
 
-        make <target> (ex make intel)
+        make target (ex. make intel)
 
-then run with./run<target> (./runintel)
+then run with./run{target} (ex ./runintel)
 
