@@ -9,6 +9,8 @@ class logReg
 public:
   logReg(const dataSet* _dataSet);
   ~logReg();
+  logReg(logReg const&) = delete;
+  logReg& operator=(logReg const&) = delete;
 
   void run();
   void setWeights(std::vector<float> _weights);

@@ -12,6 +12,9 @@ public:
   dataSet(const char* _featuresFile, const char* _labelsFile, int _numExamples, int _numFeatures);
   dataSet(int _numExamples, int _numFeatures);
   ~dataSet();
+  dataSet(dataSet const&) = delete;
+  dataSet& operator=(dataSet const&) = delete;
+  // TBD: provide deep copy
 
   int numExamples() const;
   int numFeatures() const;

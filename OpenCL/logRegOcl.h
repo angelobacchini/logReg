@@ -11,6 +11,8 @@ class logRegOcl
 public:
   logRegOcl(const dataSet* _dataSet);
   ~logRegOcl();
+  logRegOcl(logRegOcl const&) = delete;
+  logRegOcl& operator=(logRegOcl const&) = delete;
 
   void run();
   void setWeights(std::vector<float> _weights);
